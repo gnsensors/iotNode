@@ -154,8 +154,6 @@ int main()
                     v[index].y = y;
                     v[index].z = z;
                     index++;
-
-                    
                 }
                 else
                 {
