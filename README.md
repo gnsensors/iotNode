@@ -19,8 +19,7 @@ The device will initialize the Accelerometer to sample at it fastest rate with a
 ## Serial port settings
 115200 1N8 no flow control
 
-## Message format
-<HEADER><SYNC><LENGTH><PAYLOAD><CRC>
+## Message format  <HEADER><SYNC><LENGTH><PAYLOAD><CRC>
 HEADER = 0xAA 0xAA 0xAA 0xAA (this looks nice on an Oscope so it is easy to debug and see baudrate)
 SYNC = two bytes to show start of length 0xFF 0x00 (also nice on an oscope)
 LENGTH = 16 bit unsigned integer of the number of bytes being sent little Endian including CRC
